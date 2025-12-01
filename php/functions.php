@@ -37,7 +37,6 @@ function calculatePenalty($due_date) {
     $due = new DateTime($due_date);
 
     if ($today > $due) {
-        
         $interval = $today->diff($due);
         $days_overdue = $interval->days;
         return $days_overdue * PENALTY_PER_DAY;
