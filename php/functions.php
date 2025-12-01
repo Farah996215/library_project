@@ -41,12 +41,10 @@ function calculatePenalty($due_date) {
         $days_overdue = $interval->days;
         return $days_overdue * PENALTY_PER_DAY;
     }
-
     return 0;
 }
 function getPopularBooks($limit = 5) {
     global $pdo;
-
     $sql = "SELECT b.*, COUNT(bb.id) as borrow_count 
             FROM books b 
             LEFT JOIN borrowed_books bb ON b.id = bb.book_id 

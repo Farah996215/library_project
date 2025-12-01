@@ -9,9 +9,11 @@ try {
 } catch(PDOException $e) {
     die("Erreur de connexion: " . $e->getMessage());
 }
+
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
+
 define('SITE_NAME', 'Bibliothèque Moderne');
 define('PENALTY_PER_DAY', 0.50);
 ?>
