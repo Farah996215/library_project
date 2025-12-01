@@ -33,6 +33,7 @@ function displayMessage() {
     }
 }
 function calculatePenalty($due_date) {
+    
     $today = new DateTime();
     $due = new DateTime($due_date);
 
