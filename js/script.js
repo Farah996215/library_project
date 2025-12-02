@@ -81,6 +81,7 @@ async function fetchSearchSuggestions(query) {
     }
 }
 function displaySearchSuggestions(suggestions) {
+    // Implémentation de l'affichage des suggestions
     console.log('Suggestions:', suggestions);
 }
 const cart = {
@@ -119,10 +120,10 @@ const cart = {
     },
     
     updateCartDisplay: function() {
-       
+        // Mettre à jour l'affichage du panier
         const cartCount = document.querySelector('.cart-count');
         if (cartCount) {
-           
+            // Récupérer le nombre d'articles et mettre à jour
         }
     }
 };
